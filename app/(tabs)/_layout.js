@@ -6,6 +6,7 @@ import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { Button, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { Stack } from 'expo-router';
 
 export default function Layout() {
     const navigation = useNavigation();

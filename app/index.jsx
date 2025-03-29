@@ -1,40 +1,35 @@
 import React from 'react';
-import { View, Text, ImageBackground, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, ImageBackground, StyleSheet } from 'react-native';
 import tw from 'twrnc';
 import { Link, Stack } from 'expo-router';
 
 
-const MyComponent = ({ navigation }) => {
+const MyComponent = () => {
     return (
         <>
-        <Stack.Screen 
-            options={{
-                headerShown: false,
-                animation: 'none'
-            }} 
-        />
-      
-        <ImageBackground
-            source={require('../assets/images/bones/splash.png')}
-            style={styles.background}
-        >
-            <View style={tw`flex-1 justify-center items-center z-10`}>
-             
-               
-                <Link href="home" style={tw`px-12 py-6 rounded-full bg-[#843C0C] mt-80`}>
-          <Text style={tw`text-white text-2xl font-bold`}>Get Started</Text>
-        </Link>
-
-
-
-            </View>
-            <View style={[styles.fab, tw`justify-center items-center`]}>
-            <Link href="./(tabs/data)" style={tw`px-12 py-6 rounded-full bg-[#843C0C] mt-80`}>
-             <Text style={tw`text-white text-lg font-bold pt-4`}>data</Text>
-             <Text style={tw`text-white text-4xl font-bold pb-4`}>+</Text>
-          </Link>
-          </View>
-        </ImageBackground>
+            <Stack.Screen 
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }} 
+            />
+          
+            <ImageBackground
+                source={require('../assets/images/bones/splash.png')}
+                style={styles.background}
+            >
+                <View style={tw`flex-1 justify-center items-center z-10`}>
+                    <Link href="home" style={tw`px-12 py-6 rounded-full bg-[#843C0C] mt-80`}>
+                        <Text style={tw`text-white text-2xl font-bold`}>Get Started</Text>
+                    </Link>
+                </View>
+                <View style={[styles.fab, tw`justify-center items-center`]}>
+                    <Link href="/(tabs)/data" style={tw`px-12 py-6 rounded-full bg-[#843C0C]`}>
+                        <Text style={tw`text-white text-lg font-bold pt-4`}>data</Text>
+                        <Text style={tw`text-white text-4xl font-bold pb-4`}>+</Text>
+                    </Link>
+                </View>
+            </ImageBackground>
         </>
     );
 };
