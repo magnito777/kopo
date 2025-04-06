@@ -22,7 +22,7 @@
       "output": "static"
     },
     "plugins": [
-         "expo-router",
+      "expo-router",
       [
         "expo-splash-screen",
         {
@@ -30,7 +30,8 @@
           "resizeMode": "contain",
           "backgroundColor": "#002060"
         }
-  ]
+      ],
+      "expo-asset"
     ],
     "experiments": {
       "typedRoutes": true

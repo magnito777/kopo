@@ -24,9 +24,9 @@ const MyComponent = () => {
                     </Link>
                 </View>
                 <View style={[styles.fab, tw`justify-center items-center`]}>
-                    <Link href="/(tabs)/data" style={tw`px-12 py-6 rounded-full bg-[#843C0C]`}>
+                    <Link href="/(tabs)/data" style={tw`px-5 py-6 rounded-full bg-yellow-600`}>
                         <Text style={tw`text-white text-lg font-bold pt-4`}>data</Text>
-                        <Text style={tw`text-white text-4xl font-bold pb-4`}>+</Text>
+                      
                     </Link>
                 </View>
             </ImageBackground>
@@ -44,10 +44,9 @@ const styles = StyleSheet.create({
     },
     fab: {
         position: 'absolute',
-        width: 60,
-        height: 60,
+        width: 80,
+        height: 85,
         borderRadius: 30,
-        backgroundColor: '#D81B60',
         right: 20,
         bottom: 20,
     },
