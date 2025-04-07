@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Tabs } from 'expo-router';
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import Feather from '@expo/vector-icons/Feather';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import AntDesign from '@expo/vector-icons/AntDesign';
@@ -46,10 +46,10 @@ export default function Layout() {
                     }}
                 >
                     <Tabs.Screen
-                        name="form"
+                        name="dashboard"
                         options={{
-                            title: 'Form',
-                            tabBarIcon: ({ color }) => <AntDesign name="form" size={40} color={color} />
+                            title: 'dashboard',
+                            tabBarIcon: ({ color }) => <MaterialCommunityIcons name="dashboard" size={40} color={color} />
                         }}
                     />
                     <Tabs.Screen
