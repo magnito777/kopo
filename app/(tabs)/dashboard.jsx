@@ -3,7 +3,6 @@ import React from 'react';
 import { Stack } from "expo-router";
 import WebView from 'react-native-webview';
 
-
 class App extends React.Component {
   render() {
     return (
@@ -29,4 +28,4 @@ class App extends React.Component {
   }
 }
 
-
+export default App;
